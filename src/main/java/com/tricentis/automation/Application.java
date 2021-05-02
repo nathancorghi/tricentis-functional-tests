@@ -19,6 +19,8 @@ public class Application {
     @Bean
     public WebDriver webDriver() {
 
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+
         return new ChromeDriver();
     }
 }

@@ -52,7 +52,6 @@ public class TricentisStepDefinitions {
     @Before
     public void before() {
 
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/chromedriver.exe");
         driver.get(BASE_URL);
         driver.manage().window().maximize();
     }
